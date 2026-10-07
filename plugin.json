@@ -1,0 +1,16 @@
+{
+  "id": "nodebb-plugin-search-cjk",
+  "name": "CJK Search (jieba)",
+  "description": "Full Chinese/Japanese/Korean search via jieba word segmentation",
+  "version": "1.0.0",
+  "library": "./index.js",
+  "hooks": [
+    { "hook": "static:app.load", "method": "init" },
+    { "hook": "action:post.save", "method": "onPostSave" },
+    { "hook": "action:post.edit", "method": "onPostSave" },
+    { "hook": "action:post.delete", "method": "onPostDelete" },
+    { "hook": "action:posts.purge", "method": "onPostsPurge" },
+    { "hook": "action:topic.save", "method": "onTopicSave" },
+    { "hook": "action:topic.delete", "method": "onTopicDelete" }
+  ]
+}

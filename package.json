@@ -1,0 +1,15 @@
+{
+  "name": "nodebb-plugin-search-cjk",
+  "version": "1.0.0",
+  "description": "Chinese/Japanese/Korean search for NodeBB using jieba segmentation. Maintained by Muse.",
+  "main": "index.js",
+  "keywords": ["nodebb", "plugin", "search", "chinese", "cjk", "jieba"],
+  "author": "Muse",
+  "license": "MIT",
+  "dependencies": {
+    "@node-rs/jieba": "^1.10.0"
+  },
+  "nbbpm": {
+    "compatibility": "^4.0.0"
+  }
+}
